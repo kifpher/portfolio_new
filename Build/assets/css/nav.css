@@ -42,5 +42,4 @@
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear; }
   .nav a:hover {
-    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1), 0 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.3);
-    opacity: .9; }
+    opacity: .5; }
