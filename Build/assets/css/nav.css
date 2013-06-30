@@ -5,10 +5,9 @@
   height: 125px;
   color: #fffdfc; }
 
-#logo {
-  width: 320px;
+.logo {
+  width: 400px;
   float: left;
-  box-sizing: border-box;
   padding: 0 0 0 80px;
   z-index: 1; }
 
