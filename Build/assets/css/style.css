@@ -467,14 +467,14 @@ html[xmlns] .slides {
 .clear {
   clear: both; }
 
-.clearfix:before, .container:before, .c:before, .clearfix:after, .container:after, .c:after {
+.clearfix:before, .container:before, .c:before, .nav:before, .clearfix:after, .container:after, .c:after, .nav:after {
   content: "";
   display: table; }
 
-.clearfix:after, .container:after, .c:after {
+.clearfix:after, .container:after, .c:after, .nav:after {
   clear: both; }
 
-.clearfix, .container, .c {
+.clearfix, .container, .c, .nav {
   zoom: 1; }
 
 /*navigation*/
@@ -485,14 +485,14 @@ html[xmlns] .slides {
   color: #fffdfc; }
 
 .logo {
-  width: 400px;
+  width: 25%;
   float: left;
-  padding: 0 0 0 80px;
-  z-index: 1; }
+  padding: 22px 20px 0 10px; }
 
 .nav ul {
-  width: 620px;
-  display: inline-block;
+  width: 75%;
+  display: block;
+  float: left;
   font-size: 24px;
   line-height: 125px;
   list-style-type: none; }
