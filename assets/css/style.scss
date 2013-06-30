@@ -1,37 +1,14 @@
 @import "bourbon/_bourbon";
-@import "normalize";
-@import "flexslider";
-@import "grid";
-@import "nav";
-@import	"icon";
 
-*{
-	@include box-sizing(border-box);
-}
-/*global*/
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "rooney-sans", helvetica, arial ,sans-serif;
-	background: #fff6e4 url(/assets/images/texture.gif);
+@import "_base/_variables";
+@import "_base/_reset";
+@import "_base/_content";
+@import "_base/_typography";
+@import "_base/_grid";
 
-}
+@import "modules/_flexslider";
+@import "modules/_nav";
+@import	"modules/_icon";
 
-h1 { 
-	font-size: 1.5em; /*24px*/
-	}
-
-br {
-	clear: both;
-}
-
-.script {
-	 font-family: 'Pacifico', cursive;
-}
-
-
-
-#slideshow_container {
-	margin-top: 40px;
-}
-
+// Keep utilities down here.
+@import "_base/_utilities";

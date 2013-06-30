@@ -1,0 +1,234 @@
+// display
+.display-none {display: none;}
+.display-block {display: block;}
+.display-inline {display: inline;}
+.display-inline-block {display: inline-block;}
+
+
+// position
+.position-relative, {position: relative;}
+.position-absolute {position: absolute;}
+.position-fixed {position: fixed;}
+.position-static {position: static;}
+.sticky-top {position:fixed; top:0;}
+.sticky-bottom {position:fixed; bottom:0;}
+
+
+// float
+.float-left {float: left;}
+.float-right {float: right;}
+.float-none {float: none;}
+
+
+// clearing
+.clear {clear: both;}
+.clearfix:before,.clearfix:after {content:""; display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+
+
+// full
+.full-width {width: 100%}
+.full-height {height: 100%}
+
+
+// listsfo
+.no-bullets {list-style-type: none;}
+
+
+// box sizing
+.border-box {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.content-box {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -o-box-sizing: content-box;
+}
+
+
+// images
+.ir{text-indent:-999em; display:block; overflow:hidden; text-align:left; direction:ltr}
+.image-responsive{
+  width:100%;
+}
+
+.vcenter {} // This parent can be any width and height 
+.vcenter:before { // The ghost, nudged to maintain perfect centering 
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.vcentered { // The element to be centered, can also be of any width and height  
+  display: inline-block;
+  vertical-align: middle;
+  width: 99%;
+}
+
+
+// text helpers
+.text-align-center{text-align:center}
+.text-align-left{text-align:left}
+.text-align-right{text-align:right}
+
+.text-align-top{vertical-align:top}
+.text-align-middle{vertical-align:middle}
+.text-align-bottom{vertical-align:bottom}
+.text-align-baseline{vertical-align:baseline;}
+
+.text-transform-upper{text-transform:uppercase}
+.text-transform-lower{text-transform:lowercase}
+.text-transform-normal{text-transform:none}
+
+.line-height-small {line-height: 1em}
+.line-height-medium {line-height: 1.4em}
+.line-height-large {line-height: 2em}
+
+.no-wrap {white-space: nowrap;}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// font-styles
+.font-size-small {font-size: .75em;}
+.font-size-large {font-size: 1.25em;}
+
+.font-weight-bold, .bold {font-weight:bold;}
+.font-style-italic, .italic {font-style:italic}
+.font-weight-normal {font-weight:normal;}
+
+.bold {font-weight:bold;}
+.italic {font-style:italic}
+.normal {font-weight:normal;}
+
+
+
+// spacing helpers
+// p,m = padding,margin
+// a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+// 0x, .5x, 1x, 1.5x, 2x, 3x, 4x
+.pt0,.pv0,.pa0{padding-top:0px !important}
+.pt0_5,.pv0_5,.pa0_5{padding-top:$space-0_5x !important}
+.pt1,.pv1,.pa1{padding-top:$space !important}
+.pt1_5,.pv1_5,.pa1_5{padding-top:$space-1_5x !important}
+.pt2,.pv2,.pa2{padding-top:$space-2x !important}
+.pt3,.pv3,.pa3{padding-top:$space-3x !important}
+.pt4,.pv4,.pa4{padding-top:$space-4x !important}
+.pr0,.ph0,.pa0{padding-right:0px !important}
+.pr0_5,.ph0_5,.pa0_5{padding-right:$space-0_5x !important}
+.pr1,.ph1,.pa1{padding-right:$space !important}
+.pr1_5,.ph1_5,.pa1_5{padding-right:$space-1_5x !important}
+.pr2,.ph2,.pa2{padding-right:$space-2x !important}
+.pr3,.ph3,.pa3{padding-right:$space-3x !important}
+.pr4,.ph4,.pa4{padding-right:$space-4x !important}
+.pb0,.pv0,.pa0{padding-bottom:0px !important}
+.pb0_5,.pv0_5,.pa0_5{padding-bottom:$space-0_5x !important}
+.pb1,.pv1,.pa1{padding-bottom:$space !important}
+.pb1_5,.pv1_5,.pa1_5{padding-bottom:$space-1_5x !important}
+.pb2,.pv2,.pa2{padding-bottom:$space-2x !important}
+.pb3,.pv3,.pa3{padding-bottom:$space-3x !important}
+.pb4,.pv4,.pa4{padding-bottom:$space-4x !important}
+.pl0,.ph0,.pa0{padding-left:0px !important}
+.pl0_5,.ph0_5,.pa0_5{padding-left:$space-0_5x !important}
+.pl1,.ph1,.pa1{padding-left:$space !important}
+.pl1_5,.ph1_5,.pa1_5{padding-left:$space-1_5x !important}
+.pl2,.ph2,.pa2{padding-left:$space-2x !important}
+.pl3,.ph3,.pa3{padding-left:$space-3x !important}
+.pl4,.ph4,.pa4{padding-left:$space-4x !important}
+.mt0.mv0,.ma0{margin-top:0 !important}
+.mt0_5,.mv0_5,.ma0_5{margin-top:$space-0_5x !important}
+.mt1,.mv1,.ma1{margin-top:$space !important}
+.mt1_5,.mv1_5,.ma1_5{margin-top:$space-1_5x !important}
+.mt2,.mv2,.ma2{margin-top:$space-2x !important}
+.mt3,.mv3,.ma3{margin-top:$space-3x !important}
+.mt4,.mv4,.ma4{margin-top:$space-4x !important}
+.mr0,.mh0,.ma0{margin-right:0px !important}
+.mr0_5,.mh0_5,.ma0_5{margin-right:$space-0_5x !important}
+.mr1,.mh1,.ma1{margin-right:$space !important}
+.mr1_5,.mh1_5,.ma1_5{margin-right:$space-1_5x !important}
+.mr2,.mh2,.ma2{margin-right:$space-2x !important}
+.mr3,.mh3,.ma3{margin-right:$space-3x !important}
+.mr4,.mh4,.ma4{margin-right:$space-4x !important}
+.mb0,.mv0,.ma0{margin-bottom:0px !important}
+.mb0_5,.mv0_5,.ma0_5{margin-bottom:$space-0_5x !important}
+.mb1,.mv1,.ma1{margin-bottom:$space !important}
+.mb1_5,.mv1_5,.ma1_5{margin-bottom:$space-1_5x !important}
+.mb2,.mv2,.ma2{margin-bottom:$space-2x !important}
+.mb3,.mv3,.ma3{margin-bottom:$space-3x !important}
+.mb4,.mv4,.ma4{margin-bottom:$space-4x !important}
+.ml0,.mh0,.ma0{margin-left:0px !important}
+.ml0_5,.mh0_5,.ma0_5{margin-left:$space-0_5x !important}
+.ml1,.mh1,.ma1{margin-left:$space !important}
+.ml1_5,.mh1_5,.ma1_5{margin-left:$space-1_5x !important}
+.ml2,.mh2,.ma2{margin-left:$space-2x !important}
+.ml3,.mh4,.ma3{margin-left:$space-3x !important}
+.ml4,.mh4,.ma4{margin-left:$space-4x !important}
+
+
+
+// states
+.is-hidden{display:none;}  
+.is-shown{display:block !important;}
+
+.is-visible{visibility:visible !important;}
+.is-invisible{visibility:hidden  !important;}
+
+// interaction helpers
+.is-clickable, .is-hoverable {cursor:pointer}
+.is-clickable.is-disabled, {cursor:default !important}
+
+// to be defined in each module, usually applied with js
+.is-selected{}
+.is-disabled{}
+.is-active{}
+.is-inactive{}
+.is-loading{}
+.is-default{}
+.is-pressed{}
+.is-hover{}
+.is-focus{}
+.is-dragged{}
+.is-dropped{}
+
+
+// opacity 
+.opacity-0 { opacity:0; filter: alpha(opacity=0);}
+.opacity-1 { opacity:.1;filter: alpha(opacity=10); }
+.opacity-2 { opacity:.2;filter: alpha(opacity=20); }
+.opacity-3 { opacity:.3;filter: alpha(opacity=30); }
+.opacity-4 { opacity:.4;filter: alpha(opacity=40); }
+.opacity-5 { opacity:.5;filter: alpha(opacity=50); }
+.opacity-6 { opacity:.6;filter: alpha(opacity=60); }
+.opacity-7 { opacity:.7;filter: alpha(opacity=70); }
+.opacity-8 { opacity:.8;filter: alpha(opacity=80); }
+.opacity-9 { opacity:.9;filter: alpha(opacity=90); }
+.opacity-full { opacity:1;filter: alpha(opacity=100); }
+
+
+// misc
+.centered {margin: 0 auto}
+.rounded {border-radius: 2px;}
+
+
+// disable / enable text selection for mobile.
+.text-unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.text-selectable {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+
