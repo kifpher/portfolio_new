@@ -1,5 +1,7 @@
 /*navigation*/
 .nav {
+  position: relative;
+  z-index: 10000;
   background: #ff9563; /*#ff9966*/
   line-height: 125px;
   height: 125px; 
@@ -20,6 +22,7 @@
   padding: 22px 20px 0 10px;
   overflow: hidden;
   text-indent: -10000px;
+  margin-bottom: -192px;
 }
 .nav ul {
   text-transform: lowercase;
@@ -55,11 +58,12 @@
 // extention for footer 
 .nav-footer {
    li {
-    padding: 0;
+    padding: 0 10px;
   }
     a {
+      @include transition(all .2s linear);
       &:hover {
-        @include transform(rotate3d(45deg,0,0,0));
+        @include transform(rotate3d(0,0,0,90deg));
       }
     }
 }
