@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equive="Content-Type" content="text/html; charset=utf-8"/>
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  
+  <link rel='stylesheet' href='assets/css/style.css'>
+  <script src='assets/js/jquery-1.8.3.min.js'></script>
+<script src='assets/js/jquery.flexslider.min.js'></script>
+<script src='assets/js/app.js'></script>
+
+  <title>St. George Photography</title>
+
+  <script type="text/javascript" src="//use.typekit.net/uts4qcn.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  
+<header class="nav">
+  <div class="container">
+    <div class="grid_12">
+      <div class="logo">
+        <img src="/assets/images/logo.png">
+        <h1>St. George Photography</h1>
+      </div>
+        <ul class="nav-links">
+          <li><a href="folio.html">'Folio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="vumephoto.com/about.html">About</a></li>
+          <li class="last"><a href="contact.html">Contact</a></li>
+        </ul> 
+      </div><!-- End Header -->
+   </div>
+ </header>
+<div class="container">
+
+    <section class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="/assets/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+          </li>
+          <li>
+            <img src="/assets/images/kitchen_adventurer_lemon.jpg" />
+          </li>
+          <li>
+            <img src="/assets/images/kitchen_adventurer_donut.jpg" />
+          </li>
+          <li>
+            <img src="/assets/images/kitchen_adventurer_caramel.jpg" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="col_a" class="grid_4 con"><!-- Content -->
+    <h1 class="script">
+      Professional Results
+    </h1>
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div>
+    <div id="col_b" class="grid_4 con">
+     <h1 class="script">
+    Simplicity is Everything
+    </h1>
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div>
+    <div id="col_c" class="grid_4 vcon">
+     <h1 class="script">
+    Fast & Easy Scheduling
+    </h1>
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div><!-- End Content -->
+  </div>
+</div>
+	
+	<div id="footer"><!-- Footer -->
+  <div class="container clearfix"> 
+  <div class="grid_12">
+			<ul class="pull_1">
+			<li><a href="folio.html">'Folio</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="vumephoto.com/about.html">About</a></li>
+			<li class="last"><a href="contact.html">Contact</a></li>
+		</ul>
+  </div>
+  </div>
+	</div><!-- End Footer -->
+</div>
+</body>
+
+</html>
