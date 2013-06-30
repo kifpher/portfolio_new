@@ -3,6 +3,7 @@
 @import "flexslider";
 @import "grid";
 @import "nav";
+@import	"icon";
 
 *{
 	@include box-sizing(border-box);
@@ -34,47 +35,3 @@ br {
 	margin-top: 40px;
 }
 
-/*content*/
-div[class~="con"] {
-	color: #000;
-	height: 250px;
-	margin-bottom: 20px;
-}
-
-/*footer*/
-
-.footer_background {
-	width: 100vw;
-	height: 100vw;
-	max-height: 125px;
-	position: absolute;
-	top: 965px;
-	background: #ff9563;
-	z-index: -1;
-	}
-
-#footer {
-	background: #ff9966;
-	height: 125px; 
-	bottom: 0;
-	color: #fff;
-	}
-
-#footer ul {
-	margin: 0 0 0 0;
-	list-style-type: none;
-	float: right;
-	line-height: 125px;
-
-}
-
-#footer li {
-	float: left;
-	margin: 0 0 0 20px;
-}
-
-#footer li a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-}
