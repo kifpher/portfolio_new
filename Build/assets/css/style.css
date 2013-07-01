@@ -831,13 +831,16 @@ html[xmlns] .slides {
 .footing {
   font-size: 21px;
   line-height: 40px;
-  border-top: 1px solid #61b4d6; }
+  border-top: 1px solid #61b4d6;
+  text-transform: lowercase; }
 
 .footing-item {
   display: block;
   float: left; }
   .footing-item:first-child:before {
     content: "\2190"; }
+  .footing-item:last-child:before {
+    content: ""; }
   .footing-item:last-child:after {
     content: "\2192"; }
 

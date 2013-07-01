@@ -4,6 +4,7 @@
   line-height: 40px;
   border-top: 1px solid #61b4d6;
   @extend .clearfix;
+  text-transform: lowercase;
 }
 .footing-item {
   display: block;
@@ -14,6 +15,9 @@
     }
   }
   &:last-child {
+    &:before {
+      content: "";
+    }
     &:after {
       content: "\2192";
     }
