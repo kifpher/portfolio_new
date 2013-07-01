@@ -89,7 +89,7 @@ html {
   box-sizing: border-box; }
 
 html {
-  background-color: #2b2b2d; }
+  background-color: #ff9563; }
 
 body {
   margin: 0;
@@ -758,13 +758,11 @@ html[xmlns] .slides {
     opacity: 1; }
 
 .nav-footer {
-  border-top: #ff765e solid 1px;
+  border-top: #ee8d60 solid 1px;
   border-bottom: none;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.3);
-  margin-top: 60px;
-  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%); }
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.15);
+  margin-top: 60px; }
   .nav-footer ul {
     padding: 0 44px; }
   .nav-footer li {
