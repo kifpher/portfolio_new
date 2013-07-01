@@ -816,13 +816,14 @@ html[xmlns] .slides {
     display: inline-block;
     width: 45px;
     height: 45px;
-    font-size: 1.5em;
-    line-height: 45px;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   .list-special li:first-child:before {
     background: #61b4d6;
     border-radius: 10000px;
-    color: #fff; }
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 45px; }
 
 .display-none {
   display: none; }
