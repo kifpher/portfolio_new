@@ -58,8 +58,6 @@
       </div><!-- End Header -->
    </div>
  </header>
-
-  
 <div class="container">
   <div class="services g_d6 mt4">
     <h1 class="script h1 h_underline text-blue pb1">Services</h1>
@@ -82,20 +80,15 @@
       </ul>
     </div>
   </div>
-    <div id="form" class="form g_d6">
+    <div class="form g_d6">
       <h1 class="script h1 text-blue pb1 mt4">Contact</h2>
-      <form id="ajax-contact-form" action="javascript:alert('success!');">
-        <fieldset class="info_fieldset">
-          <div id="note"></div>
-          <div id="fields">
-            <input class="input_text mb1" value="" name="first_name" type="text" placeholder="first name">
-            <input class="input_text mb1" value="" name="last_name" type="text" placeholder="last name">
-            <input class="input_text mb1" value="" name="email" type="email" placeholder="email adress">
-            <textarea  class="input_textarea input_textarea_height_200 mb1" name="message" placeholder="details"></textarea>
-            <input type="submit" value="Send" class="button float-right">
-          </div>
-        </fieldset>
-      </form>
+        <form>
+          <input class="input_text mb1" type="text" placeholder="first name">
+          <input class="input_text mb1" type="text" placeholder="last name">
+          <input class="input_text mb1" type="email" placeholder="email adress">
+          <textarea  class="input_textarea input_textarea_height_200 mb1" placeholder="details"></textarea>
+          <input type="submit" value="Send" class="button float-right">
+        </form>
   </div>
 
 </div>
