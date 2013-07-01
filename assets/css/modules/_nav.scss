@@ -1,6 +1,7 @@
 /*navigation*/
 .nav {
   background: #ff9563; /*#ff9966*/
+  line-height: 125px;
   height: 125px; 
   color: #fffdfc;
   @extend .clearfix; 
@@ -25,7 +26,6 @@
   display: block;
   float: right;
   font-size: 24px;
-  line-height: 125px;
   list-style-type: none;
   padding: 0 40px;
 }
@@ -57,5 +57,12 @@
    li {
     padding: 0;
   }
+    a {
+      &:hover {
+        @include transform(rotate3d(45deg,0,0,0));
+      }
+    }
 }
-
+.copyright {
+  display: inline-block;
+}

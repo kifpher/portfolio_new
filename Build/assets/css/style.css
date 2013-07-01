@@ -620,6 +620,7 @@ html[xmlns] .slides {
 .nav {
   background: #ff9563;
   /*#ff9966*/
+  line-height: 125px;
   height: 125px;
   color: #fffdfc;
   border-bottom: #ff6449 solid 1px;
@@ -643,7 +644,6 @@ html[xmlns] .slides {
   display: block;
   float: right;
   font-size: 24px;
-  line-height: 125px;
   list-style-type: none;
   padding: 0 40px; }
 
@@ -667,6 +667,15 @@ html[xmlns] .slides {
 
 .nav-footer li {
   padding: 0; }
+.nav-footer a:hover {
+  -webkit-transform: rotate3d(45deg, 0, 0, 0);
+  -moz-transform: rotate3d(45deg, 0, 0, 0);
+  -ms-transform: rotate3d(45deg, 0, 0, 0);
+  -o-transform: rotate3d(45deg, 0, 0, 0);
+  transform: rotate3d(45deg, 0, 0, 0); }
+
+.copyright {
+  display: inline-block; }
 
 .icon {
   background: url(../images/sprite.png) no-repeat 0 0;
