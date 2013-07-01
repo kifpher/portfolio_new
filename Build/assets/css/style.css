@@ -799,6 +799,17 @@ html[xmlns] .slides {
   display: block;
   margin: 0 auto; }
 
+.hero-avatar {
+  width: 50%;
+  margin: 92px auto 48px auto;
+  padding: 3px;
+  background: #61b4d6;
+  border-radius: 10000px; }
+  .hero-avatar .hero-img {
+    margin: 0px;
+    width: 100%;
+    border-radius: 10000px; }
+
 .list-special {
   list-style: none;
   counter-reset: count;
