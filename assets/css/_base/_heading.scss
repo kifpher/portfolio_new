@@ -1,4 +1,4 @@
-.heading {line-height: 1em; @extend .element; font-weight: bold;}
+.heading {line-height: 1.2em; @extend .element; font-weight: bold;}
 
 // 36px
 .h1 {@extend .heading; font-size: #{30 / $font-size-plain}em;text-rendering: optimizeLegibility;}
