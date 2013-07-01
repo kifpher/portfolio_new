@@ -27,5 +27,7 @@
 // 55px
 .h_xlarge {@extend .heading; font-size: #{48 / $font-size-plain}em;text-rendering: optimizeLegibility;}
 
-
+.text-blue {
+  color: #61b4d6;
+}
 
