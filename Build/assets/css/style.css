@@ -806,6 +806,8 @@ html[xmlns] .slides {
   line-height: 1.5em; }
   .list-special li {
     margin-bottom: 20px; }
+    .list-special li:last-child {
+      margin-bottom: 0; }
   .list-special li:before {
     position: absolute;
     text-align: right;
