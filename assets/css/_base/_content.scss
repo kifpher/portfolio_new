@@ -14,7 +14,7 @@ body {
 .em, .is-formatted em,  .i, .is-formatted i {font-style:italic}
 .strong, .is-formatted strong, .b, .is-formatted b {font-weight:bold}
 .code, .is-formatted pre, .pre, .is-formatted pre {font-family:monospace}
-.p, .is-formatted p {@extend .block;}
+.p, .is-formatted p {@extend .block; font-size: 21px; line-height: 1.5em; margin-bottom: 1.5em;}
 .blockquote, .is-formatted blockquote {padding:0.2em 1em 0.2em 2em; border-left:3px solid #eee;@extend .block;}
 .big, .is-formatted big {font-size:1.125em}
 .small, .is-formatted small{font-size:.875em}
@@ -38,7 +38,7 @@ body {
 .is-formatted h3,
 .is-formatted h4,
 .is-formatted h5,
-.is-formatted h6 {margin-top:$space-2_5x;font-weight:bold;}
+.is-formatted h6 {margin-bottom:$space-2_5x;font-weight:bold;}
 
  
 .is-formatted h1:first-child,
@@ -47,6 +47,27 @@ body {
 .is-formatted h4:first-child,
 .is-formatted h5:first-child,
 .is-formatted h6:first-child {margin-top:0;}
+
+.is-formatted {
+  h1 {
+    @extend .h1;
+  }
+  h2 {
+    @extend .h1;
+  }
+  h3 {
+    @extend .h1;
+  }
+  h4 {
+    @extend .h1;
+  }
+  h5 {
+    @extend .h1;
+  }
+  h6 {
+    @extend .h1;
+  }
+}
 
 .is-formatted img {width:100%;@extend .block;}
 
