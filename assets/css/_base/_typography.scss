@@ -6,14 +6,12 @@
 
 // set site wide typography on elements
 body {
+  color: #3e3838;
   font-size: $font-size;
   line-height: 1.5em;
   font-family: "rooney-sans", helvetica, arial ,sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  h1 {
-    color: #61b4d6;
-  }
 }
 input, textarea {
   font-family: "rooney-sans", helvetica, arial ,sans-serif;
