@@ -1,0 +1,22 @@
+.footing {
+  @extend .script; 
+  font-size: 21px;
+  line-height: 40px;
+  border-top: 1px solid #61b4d6;
+  @extend .clearfix;
+}
+.footing-item {
+  display: block;
+  float: left;
+  &:first-child{
+    &:before {
+      content: "\2190";
+    }
+  }
+  &:last-child {
+    &:after {
+      content: "\2192";
+    }
+  }
+
+}

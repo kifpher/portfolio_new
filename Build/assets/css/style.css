@@ -151,7 +151,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #2989da;
+  color: #61b4d6;
   cursor: pointer;
   -webkit-transition: color 0.25s ease-out, border-color 0.25s ease-out, opacity 0.25s linear, background 0.25s ease-out;
   -moz-transition: color 0.25s ease-out, border-color 0.25s ease-out, opacity 0.25s linear, background 0.25s ease-out;
@@ -226,7 +226,7 @@ input, textarea {
   font-family: "rooney-sans", helvetica, arial ,sans-serif;
   font-size: 16px; }
 
-.script {
+.script, .footing {
   font-family: 'Pacifico', cursive; }
 
 .container {
@@ -440,14 +440,14 @@ input, textarea {
 .clear {
   clear: both; }
 
-.clearfix:before, .container:before, .c:before, .nav:before, .clearfix:after, .container:after, .c:after, .nav:after {
+.clearfix:before, .container:before, .c:before, .nav:before, .footing:before, .clearfix:after, .container:after, .c:after, .nav:after, .footing:after {
   content: "";
   display: table; }
 
-.clearfix:after, .container:after, .c:after, .nav:after {
+.clearfix:after, .container:after, .c:after, .nav:after, .footing:after {
   clear: both; }
 
-.clearfix, .container, .c, .nav {
+.clearfix, .container, .c, .nav, .footing {
   zoom: 1; }
 
 .heading, .h1, .h2, .h3, .h4, .h5, .h6, .h_large, .h_xlarge {
@@ -808,22 +808,36 @@ html[xmlns] .slides {
     margin-bottom: 20px; }
   .list-special li:before {
     position: absolute;
+    text-align: right;
     right: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
     content: counter(count,decimal) ".";
     counter-increment: count;
     color: #61b4d6;
     display: inline-block;
     width: 45px;
     height: 45px;
-    text-align: center;
     font-weight: bold; }
   .list-special li:first-child:before {
+    text-align: center;
     background: #61b4d6;
     border-radius: 10000px;
     color: #fff;
     font-size: 1.2em;
     line-height: 45px; }
+
+.footing {
+  font-size: 21px;
+  line-height: 40px;
+  border-top: 1px solid #61b4d6; }
+
+.footing-item {
+  display: block;
+  float: left; }
+  .footing-item:first-child:before {
+    content: "\2190"; }
+  .footing-item:last-child:after {
+    content: "\2192"; }
 
 .display-none {
   display: none; }
@@ -869,14 +883,14 @@ html[xmlns] .slides {
 .clear {
   clear: both; }
 
-.clearfix:before, .container:before, .c:before, .nav:before, .clearfix:after, .container:after, .c:after, .nav:after {
+.clearfix:before, .container:before, .c:before, .nav:before, .footing:before, .clearfix:after, .container:after, .c:after, .nav:after, .footing:after {
   content: "";
   display: table; }
 
-.clearfix:after, .container:after, .c:after, .nav:after {
+.clearfix:after, .container:after, .c:after, .nav:after, .footing:after {
   clear: both; }
 
-.clearfix, .container, .c, .nav {
+.clearfix, .container, .c, .nav, .footing {
   zoom: 1; }
 
 .full-width {

@@ -8,19 +8,20 @@
     }
     li:before {
       position: absolute;
+      text-align: right;
       right: 100%;
-      margin-right: 20px;
+      margin-right: 10px;
       content: counter(count,decimal) ".";
       counter-increment: count;
       color: #61b4d6;
       display: inline-block;
       width: 45px;
       height: 45px;
-      text-align: center;
       font-weight: bold;
     }
     li:first-child {
       &:before {
+        text-align: center;
         background: #61b4d6;
         border-radius: 10000px;
         color: #fff;
