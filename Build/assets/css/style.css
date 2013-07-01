@@ -215,6 +215,7 @@ a {
   text-shadow: 0 1px rgba(0, 0, 0, 0.2); }
 
 body {
+  color: #3e3838;
   font-size: 16px;
   line-height: 1.5em;
   font-family: "rooney-sans", helvetica, arial ,sans-serif;
@@ -483,6 +484,9 @@ input, textarea {
   font-size: 3em;
   text-rendering: optimizeLegibility; }
 
+.text-blue {
+  color: #61b4d6; }
+
 /*
  * jQuery FlexSlider v2.0
  * http://www.woothemes.com/flexslider/
@@ -744,7 +748,11 @@ html[xmlns] .slides {
   border-bottom: none;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.3);
-  margin-top: 60px; }
+  margin-top: 60px;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%); }
+  .nav-footer ul {
+    padding: 0 44px; }
   .nav-footer li {
     padding: 0 10px; }
   .nav-footer a {
@@ -759,7 +767,8 @@ html[xmlns] .slides {
       transform: rotate3d(0, 0, 1, 90deg); }
 
 .copyright {
-  display: inline-block; }
+  display: inline-block;
+  padding: 0 0 0 10px; }
 
 .icon {
   background: url(../images/sprite.png) no-repeat 0 0;
@@ -776,6 +785,44 @@ html[xmlns] .slides {
 
 .icon-dribbble {
   background-position: -150px 0; }
+
+.hero {
+  position: relative;
+  padding: 96px 0; }
+
+.hero-badge {
+  position: absolute;
+  top: 0;
+  right: 140px; }
+
+.hero-img {
+  display: block;
+  margin: 0 auto; }
+
+.list-special {
+  list-style: none;
+  counter-reset: count;
+  font-size: 24px;
+  line-height: 1.5em; }
+  .list-special li {
+    margin-bottom: 20px; }
+  .list-special li:before {
+    position: absolute;
+    right: 100%;
+    margin-right: 20px;
+    content: counter(count,decimal) ".";
+    counter-increment: count;
+    color: #61b4d6;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5em;
+    line-height: 45px;
+    text-align: center; }
+  .list-special li:first-child:before {
+    background: #61b4d6;
+    border-radius: 10000px;
+    color: #fff; }
 
 .display-none {
   display: none; }

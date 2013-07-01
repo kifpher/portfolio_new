@@ -1,0 +1,31 @@
+.list-special {
+    list-style: none;
+    counter-reset: count;
+    font-size: 24px;
+    line-height: 1.5em;
+    li {
+      margin-bottom: 20px;
+    }
+    li:before {
+      position: absolute;
+      right: 100%;
+      margin-right: 20px;
+      content: counter(count,decimal) ".";
+      counter-increment: count;
+      color: #61b4d6;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      font-size: 1.5em;
+      line-height: 45px;
+      text-align: center;
+
+    }
+    li:first-child {
+      &:before {
+      background: #61b4d6;
+      border-radius: 10000px;
+      color: #fff;
+      }
+    }
+}
