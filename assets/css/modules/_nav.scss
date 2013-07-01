@@ -62,6 +62,10 @@
     text-shadow: 0px -1px 1px rgba(0,0,0,.1);
     box-shadow: 0 -1px 6px rgba(0,0,0,.3);
     margin-top: 60px;
+    @include background-image(linear-gradient(bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%));
+      ul {
+        padding: 0 44px;
+      }
 
    li {
     padding: 0 10px;
@@ -73,6 +77,8 @@
       }
     }
 }
+
 .copyright {
   display: inline-block;
+  padding: 0 0 0 10px;
 }
