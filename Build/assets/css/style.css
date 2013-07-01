@@ -455,30 +455,30 @@ input, textarea {
 .clearfix, .container, .c, .nav, .footing {
   zoom: 1; }
 
-.heading, .h1, .is-formatted h1, .is-formatted h2, .is-formatted h3, .is-formatted h4, .is-formatted h5, .is-formatted h6, .h2, .h3, .h4, .h5, .h6, .h_large, .h_xlarge {
+.heading, .h1, .is-formatted h1, .h2, .is-formatted h2, .h3, .is-formatted h3, .h4, .is-formatted h4, .h5, .is-formatted h5, .h6, .is-formatted h6, .h_large, .h_xlarge {
   line-height: 1.2em;
   font-weight: bold; }
 
-.h1, .is-formatted h1, .is-formatted h2, .is-formatted h3, .is-formatted h4, .is-formatted h5, .is-formatted h6 {
+.h1, .is-formatted h1 {
   font-size: 1.875em;
   text-rendering: optimizeLegibility; }
 
-.h2 {
+.h2, .is-formatted h2 {
   font-size: 1.5em;
   text-rendering: optimizeLegibility; }
 
-.h3 {
+.h3, .is-formatted h3 {
   font-size: 1.3125em;
   text-rendering: optimizeLegibility; }
 
-.h4 {
+.h4, .is-formatted h4 {
   font-size: 1.125em;
   text-rendering: optimizeLegibility; }
 
-.h5 {
+.h5, .is-formatted h5 {
   font-size: 1em; }
 
-.h6 {
+.h6, .is-formatted h6 {
   font-size: 0.75em; }
 
 .h_large {
@@ -491,6 +491,9 @@ input, textarea {
 
 .text-blue {
   color: #61b4d6; }
+
+.h_underline {
+  border-bottom: 1px solid #61b4d6; }
 
 /*
  * jQuery FlexSlider v2.0
