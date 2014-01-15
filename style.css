@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 3px solid #797979;
 	height: 3px;
 	width: 24px;
-	display: none;
 }
 .button:after {
 	content: " ";
@@ -373,7 +372,9 @@ input[type="submit"] {
 
 
 
-
+#success, #error {
+	display: none;
+}
 
 
 
