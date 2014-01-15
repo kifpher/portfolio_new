@@ -4,8 +4,11 @@
 	<title>Momotofu: Web Design</title>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.placeholder.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/modernizr-min.js"></script>
 	<script src="app.js"></script>
-	<script src="contact.js"></script>
  	<link rel="stylesheet" type="text/css" href="style.css">
  	<link rel="stylesheet" type="text/css" href="layout.css">
  	<script type="text/javascript" src="//use.typekit.net/gtr1cik.js"></script>
