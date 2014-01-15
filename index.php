@@ -88,7 +88,7 @@
 		consistent and user friendly.</p>
 	</div>
 </div>	
-<div class="hbg">
+<!-- <div class="hbg">
 	<div class="container grid_full hbg contact">
 		<form id="contact" action="mail.php" method="post">
 			<h2 class="heading">Let's Get Started</h2>		
@@ -100,7 +100,41 @@
 	 		<p class="error" style="display:none">E-mail must be valid and message must be longer than 100 characters.</p>
 		</form> 
 	</div>
-</div>
+</div> -->
+
+<div id="contact-form">	
+
+<form id="contact" method="post" action="">
+<fieldset>	
+
+<label for="name">Name</label>
+<input type="text" name="name" placeholder="Full Name" title="Enter your name" class="required">
+
+<label for="email">E-mail</label>
+<input type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
+
+<label for="phone">Phone</label>
+<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
+
+<label for="website">Website</label>
+<input type="url" name="url" placeholder="http://">
+
+<label for="message">Question/Comment</label>
+<textarea name="message"></textarea>
+
+<input type="submit" name="submit" class="button" id="submit" value="Send Message" />
+
+</fieldset>
+</form>
+
+</div><!-- /end #contact-form -->
+
+<script src="js/modernizr-min.js"></script>
+<script>
+if (!Modernizr.input.placeholder){
+      $('input[placeholder], textarea[placeholder]').placeholder();
+}
+</script>
 
 <!-- <form method="post" action="mail.php">
         
