@@ -104,7 +104,7 @@
       <input id="submit" type="submit" name="submit" value="Send" />  
     </fieldset>  
   </form>
- 
+   
   <div id="success">
     <span>
       <p>Your message was sent succssfully! I will be in touch as soon as I can.</p>
@@ -129,59 +129,50 @@
   </ul>
 </div>
 <script type="text/javascript">
-$(function() {
-    $('#contact').validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                required: true
-            },
-            captcha: {
-                required: true,
-                answercheck: true
-            }
+$('#contact').validate({
+    rules: {
+        name: {
+            required: true,
+            minlength: 2
         },
-        messages: {
-            name: {
-                required: "come on, you have a name don't you?",
-                minlength: "your name must consist of at least 2 characters"
-            },
-            email: {
-                required: "no email, no message"
-            },
-            message: {
-                required: "um...yea, you have to write something to send this form.",
-                minlength: "thats all? really?"
-            },
-            captcha: {
-                required: "sorry, wrong answer!"
-            }
+        email: {
+            required: true,
+            email: true
         },
-        submitHandler: function(form) {
-            $(form).ajaxSubmit({
-                type:"POST",
-                data: $(form).serialize(),
-                url:"process.php",
-                success: function() {
-                    $('#contact').fadeTo( "fast", function() {
-                        $('#success').fadeIn();
-                    });
-                },
-                error: function() {
-                    $('#contact').fadeTo( "fast", function() {
-                        $('#error').fadeIn();
-                    });
-                }
-            });
+        message: {
+            required: true
         }
-    });
+    },
+    messages: {
+        name: {
+            required: "come on, you have a name don't you?",
+            minlength: "your name must consist of at least 2 characters"
+        },
+        email: {
+            required: "no email, no message"
+        },
+        message: {
+            required: "um...yea, you have to write something to send this form.",
+            minlength: "thats all? really?"
+        }
+    },
+    submitHandler: function(form) {
+        $(form).ajaxSubmit({
+            type:"POST",
+            data: $(form).serialize(),
+            url:"process.php",
+            success: function() {
+                $('#contact').fadeOut( "fast", function() {
+                    $('#success').fadeIn();
+                });
+            },
+            error: function() {
+                $('#contact').fadeOut( "fast", function() {
+                    $('#error').fadeIn();
+                });
+            }
+        });
+    }
 });
 </script>
 </body>
